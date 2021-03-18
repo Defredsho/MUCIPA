@@ -4,7 +4,6 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>MUCIPA</title>
-		<link rel="shortcut icon" href="img/MUCIPA.ico">
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
@@ -23,6 +22,11 @@
 				const duration = Math.random() * 5;
 				blocks[i].style.animationDuration = duration+'s';
 			}
+
+			const section = document.querySelector('section');
+			setTimeout(function(){
+							section.classList.add('active')
+						},10000)
 		</script>
 	</body>
 </html>
